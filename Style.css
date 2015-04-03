@@ -1,5 +1,9 @@
+body {
+      text-align: center;
+      color: white;
+    }
 h1 {
-	font-family: Time;
+	font-family: helvetica;
 	font-size: 30px;
 	color: red;
 }
