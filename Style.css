@@ -1,12 +1,13 @@
 body {
       text-align: center;
       color: black;
+      background-color: #CDB380;
 h1 {
 	font-family: helvetica;
 	font-size: 30px;
-	color: red;
+	color: #033649;
 }
 p{
 	font-family: Ariel;
-	color: black;
+	color: #036564;
 }
