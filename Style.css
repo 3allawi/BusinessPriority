@@ -1,7 +1,7 @@
 body {
       text-align: center;
       color: black;
-      background-image: url(BackgroundS-BP.jpg);
+      background: url("/images/BackgroundS-BP.jpg");
 h1 {
 	font-family: helvetica;
 	font-size: 70px;
