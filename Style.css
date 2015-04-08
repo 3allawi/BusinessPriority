@@ -1,8 +1,8 @@
 body {
       text-align: center;
       color: black;
-      background: #ffffff url("/images/BackgroundS-BP.jpg") no-repeat right top;
-    }
+      background-size: cover;
+      background-position: center;
 h1 {
 	font-family: helvetica;
 	font-size: 30px;
