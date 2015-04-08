@@ -1,7 +1,7 @@
 body {
       text-align: center;
       color: black;
-      background: #ffffff url("BackgroundS-BP.jpg") no-repeat right top;
+      background: #ffffff url("/images/BackgroundS-BP.jpg") no-repeat right top;
     }
 h1 {
 	font-family: helvetica;
