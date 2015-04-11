@@ -3,6 +3,7 @@ body {
       color: black;
       background: url("/images/BackgroundS-BP1.jpg");
       background-size: cover;
+      background-position: center;
       background-repeat: no-repeat;
 h1 {
 	font-family: helvetica;
@@ -12,4 +13,9 @@ h1 {
 p{
 	font-family: Ariel;
 	color: #036564;
+}
+img {
+	margin: 40px 0px 0px 0px;
+	border: 7px solid gray;
+	border-radius: 20px;
 }
