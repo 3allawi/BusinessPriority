@@ -3,7 +3,7 @@ body {
       color: black;
       background: url("/images/BackgroundS-BP1.jpg");
       background-size: cover;
-      background-position: center;
+      /*background-position: center;*/
       background-repeat: no-repeat;
 h1 {
 	font-family: helvetica;
