@@ -4,18 +4,16 @@ body {
       background: url("/images/BackgroundS-BP1.jpg");
       background-size: cover;
       background-repeat: no-repeat;
-h1 {
-	font-family: 'Lora',Helvetica;
-	font-size: 70px;
-	color: #3299BB;
-}
-p{
+  }
+
+p {
 	font-family: 'Lora';
 	color: #036564;
 }
+
 img {
 	margin: 40px 0px 0px 0px;
 	border: 7px solid gray;
 	border-radius: 20px;
 }
-}
+
