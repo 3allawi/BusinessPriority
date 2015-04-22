@@ -11,6 +11,17 @@ p {
 	color: #036564;
 }
 
+h1.arabic {
+	font-family: helvetica;
+	font-size: 70px;
+	color: #036564;
+}
+h1.english {
+	font-family: helvetica;
+	font-size: 70px;
+	color: #036564;
+}
+
 img.logo {
 	margin: 10px;
 	height: 150px;
