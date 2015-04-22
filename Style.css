@@ -12,13 +12,15 @@ p {
 }
 
 h1.arabic {
+	padding: 0;
+	margin: 0;
 	font-family: helvetica;
-	font-size: 70px;
+	font-size: 30px;
 	color: #036564;
 }
 h1.english {
 	font-family: helvetica;
-	font-size: 70px;
+	font-size: 45px;
 	color: #036564;
 }
 
