@@ -11,20 +11,20 @@ p {
 	color: #036564;
 }
 
-.arabic h1 {
+h1.arabic {
 	padding: 0;
 	margin: 0;
 	font-family: helvetica;
 	font-size: 30px;
 	color: #036564;
 }
-.english h1 {
+h1.english {
 	font-family: 'Lato', sans-serif;
 	font-size: 45px;
 	color: #036564;
 }
 
-.logo img {
+img.logo {
 	margin: 10px;
 	height: 100px;
 	widows: auto;
