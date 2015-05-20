@@ -11,5 +11,8 @@ p {
 	color: #036564;
 }
 
-
+.logo img {
+	height: 100px;
+	width: auto;
+}
 
