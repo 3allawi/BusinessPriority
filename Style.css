@@ -7,7 +7,7 @@ body {
   }
 
 p {
-	font-family: 'Lora';
+	font-family: 'Lora', serif;
 	color: #036564;
 }
 
@@ -17,7 +17,7 @@ img {
 }
 
 .english h1 {
-	font-family: 'Lora';
+	font-family: 'Lora', serif;
 	color:#036564;
 }
 
