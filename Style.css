@@ -1,3 +1,28 @@
-.arabic {
-	color: red;
+.container h2 {
+	font-family: Helvetica;
+	font-size: 40px;
+}
+.nav a {
+  color: #5a5a5a;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #3399FF;
+}
+
+.jumbotron a {
+	color: #fff;
+}
+
+.popover {
+	color: #000;
 }

@@ -4,72 +4,90 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <!-- This is the tab for Arabic and English (#home for English, #menu1 for Arabic) -->
     <div class="container">
-  <h2>Mosaco Tools & Machines</h2>
+  <h2><strong>MOSACO TOOLS & MACHINERY</strong></h2>
+  <!-- Navigation Tabs -->
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">English</a></li>
-    <li><a data-toggle="tab" href="#arabic">عربي</a></li>
+    <li class="active"><a data-toggle="tab" href="#english">English</a></li>
+    <li><a data-toggle="tab" href="#arabic" dir="rtl">عربي </a></li>
   </ul>
-<!-- This part that incapsulates Both the Arabic and English-->
   <div class="tab-content">
-    <!-- This is for the English content Tab-->
-    <div id="home" class="tab-pane fade in active">
-      <h3>English</h3>
-      <p>This Tab must only show in English and only English</p>
-      <div class="alert alert-success">
-    <strong>Success!</strong> This alert box could indicate a successful or positive action.
-  </div>
-  <!-- This is for the English Menu pills-->
-  <div class="container">
-  <h2>Products</h2>
-  <ul class="nav nav-pills nav-justified">
-    <li class="active"><a data-toggle="pill" href="#etools">Tools</a></li>
-    <li><a data-toggle="pill" href="#edrills">Drills</a></li>
-    <li><a data-toggle="pill" href="#ecutters">Cutters</a></li>
-    <li><a data-toggle="pill" href="#efyles">Fyles</a></li>
-  </ul>
-</div>
-<div class="tab-content">
-    <div id="etools" class="tab-pane fade in active">
-      <h3>Tools</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div id="edrills" class="tab-pane fade">
-      <h3>Drills</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    </div>
-    <!-- This is The last DIV for English tab-->
-    </div>
-    <!-- This is for the Arabic content Tab-->
-    <div id="arabic" class="tab-pane fade">
-      <h3 dir="rtl">عربي</h3>
-      <p dir="rtl">هذا القسم للغة العربية فقط . و لا شيء إلا اللغة العربية </p>
-      <div class="alert alert-success">
-    <p dir="rtl"><strong dir="rtl">نجاح! </strong>الخلفية الخضراء لتحديثات العاجلة، و تظهر بالعربية .</p> 
-  </div>
-  <!-- This is for the Arabic Menu pills-->
-  <div dir="rtl" class="container">
-  <h2>المنتجات </h2>
-  <ul dir="rtl" class="nav nav-pills nav-justified">
-    <li dir="rtl" class="active"><a data-toggle="pill" href="#atools">أدوات</a></li>
-    <li dir="rtl"><a data-toggle="pill" href="#adrills">ريش دريل</a></li>
-    <li dir="rtl"><a data-toggle="pill" href="#acutters">أدوات قطع</a></li>
-    <li dir="rtl"><a data-toggle="pill" href="#afyles">مبارد </a></li>
-  </ul>
-</div>
-    </div>
-  </div>
-</div>
-</div>
+    
+    <div id="english" class="tab-pane fade in active"><!-- English section -->
 
+      
 
+    <div class="jumbotron"><!-- English Jumbotron section -->
+      <div class="container">
+        <h1>The wise choice</h1>
+        <p>Exceptional quality products from reputable companies across the globe.</p>
+        <p>Call to place an order  <span class="glyphicon glyphicon-phone-alt"></span></p>
+        <button type="button" class="btn btn-success"><a href="#" data-toggle="popover" title="Direct Phone Line" data-content="012 6438 232">Jeddah</a></button><!-- Jeddah Buttong section -->
+        <button type="button" class="btn btn-success"><a href="#" data-toggle="popover" title="Direct Phone Line" data-content="012 6438 232">Riyadh</a></button><!-- Riyadh Buttong section -->
+        <button type="button" class="btn btn-success"><a href="#" data-toggle="popover" title="Direct Phone Line" data-content="012 6438 232">Dammam</a></button><!-- Dammam Buttong section -->
+
+      </div>
+    </div> <!-- end of English Jumbrotron section -->
+
+    <div class="container"><!-- start of English Pills section -->
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#cutting">Cutting Tools</a></li>
+    <li><a data-toggle="pill" href="#pumps">Greasing Pumps</a></li>
+    <li><a data-toggle="pill" href="#saws">Saws & Fyles</a></li>
+    <li><a data-toggle="pill" href="#markers">Laser Markers</a></li>
+  </ul>
   
+  <div class="tab-content">
+    <div id="cutting" class="tab-pane fade in active"><!-- First English Pill -->
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div><!-- End First English Pill -->
 
+    <div id="pumps" class="tab-pane fade"><!-- Second English Pill -->
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div><!-- end Second English Pill -->
+
+    <div id="saws" class="tab-pane fade"><!-- Third English Pill -->
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div><!-- End Third English Pill -->
+
+    <div id="markers" class="tab-pane fade"><!-- Fourth English Pill -->
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div><!-- End Fourth English Pill -->
+
+  </div>
+</div><!-- end of English Pills section -->
+      
+    </div> <!-- Last div in English -->
+    <!-- Arabic Section -->
+    <div id="arabic" class="tab-pane fade">
+      
+      <div class="jumbotron"><!-- Arabic Jumbotron section -->
+      <div class="container">
+        <h1 dir="rtl">الإختيار الأمثل</h1>
+        <p dir="rtl">أدوات بجودة إستثنائية، نستوردها لكم من أفضل الماركات من حول العالم. </p>
+        <p dir="rtl"><a href="#">إتصل الآن لتقديم طلبك </a></p>
+      </div>
+    </div> <!-- end of Arabic Jumbrotron section -->
+
+    </div> <!-- Last div in Arabic -->
+</div> <!-- Last div for TABS -->
+</div> <!-- Last div for container -->
+
+<!-- PopOver Script -->
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+<!-- end of PopOver Script -->
   </body>
 </html>
