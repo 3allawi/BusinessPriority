@@ -26,3 +26,15 @@
 .popover {
 	color: #003;
 }
+
+button {
+	padding-left: 20px;
+}
+
+.col-sm-4 h4 {
+	text-align: center;
+}
+
+.col-sm-4 li {
+	text-align: center;
+}
