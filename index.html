@@ -1,13 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Business Priority</title>
-<link rel="stylesheet" type="text/css" href="Style.css">
+	<link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 <body>
-<h1>Business Priority</h1>
-<p>This page is currently under construction - Ali Malaibari</p>
-<br>
-<p class="lowercase">Please come back anytime after the <strong>1st of September 2026</strong></p>
+
+	<div class="bg-shapes">
+		<span class="shape shape1"></span>
+		<span class="shape shape2"></span>
+		<span class="shape shape3"></span>
+	</div>
+
+	<main class="card">
+		<div class="badge">Under Construction</div>
+
+		<h1>Business Priority</h1>
+
+		<p class="subtitle">We're building something new. This page is currently under construction.</p>
+
+		<div class="countdown" id="countdown">
+			<div class="countdown-item">
+				<span class="countdown-number" id="days">00</span>
+				<span class="countdown-label">Days</span>
+			</div>
+			<div class="countdown-item">
+				<span class="countdown-number" id="hours">00</span>
+				<span class="countdown-label">Hours</span>
+			</div>
+			<div class="countdown-item">
+				<span class="countdown-number" id="minutes">00</span>
+				<span class="countdown-label">Minutes</span>
+			</div>
+			<div class="countdown-item">
+				<span class="countdown-number" id="seconds">00</span>
+				<span class="countdown-label">Seconds</span>
+			</div>
+		</div>
+
+		<p class="lowercase">Please come back anytime after the <strong>1st of September 2026</strong></p>
+
+		<div class="footer">
+			<span class="line"></span>
+			<p>Ali Malaibari</p>
+		</div>
+	</main>
+
+	<script>
+		const launchDate = new Date("2026-09-01T00:00:00").getTime();
+
+		function updateCountdown() {
+			const now = new Date().getTime();
+			const distance = launchDate - now;
+
+			if (distance < 0) {
+				document.getElementById("countdown").innerHTML = "<p class='launched'>We're live!</p>";
+				return;
+			}
+
+			const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			document.getElementById("days").textContent = String(days).padStart(2, "0");
+			document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+			document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+			document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+		}
+
+		updateCountdown();
+		setInterval(updateCountdown, 1000);
+	</script>
+
 </body>
 </html>
