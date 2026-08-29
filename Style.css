@@ -3,93 +3,66 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+ 
 body {
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-	background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-	background-size: 300% 300%;
-	animation: gradientShift 15s ease infinite;
-	overflow: hidden;
-	position: relative;
+	background-image:
+		linear-gradient(rgba(8, 10, 20, 0.55), rgba(8, 10, 20, 0.75)),
+		url('images/BackgroundS-BP.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	padding: 20px;
 }
-
-@keyframes gradientShift {
-	0% { background-position: 0% 50%; }
-	50% { background-position: 100% 50%; }
-	100% { background-position: 0% 50%; }
-}
-
-/* Floating background shapes */
-.bg-shapes {
-	position: fixed;
-	inset: 0;
-	overflow: hidden;
-	z-index: 0;
-}
-
-.shape {
-	position: absolute;
-	border-radius: 50%;
-	background: rgba(255, 255, 255, 0.06);
-	filter: blur(2px);
-}
-
-.shape1 {
-	width: 300px;
-	height: 300px;
-	top: -80px;
-	left: -80px;
-	animation: float 12s ease-in-out infinite;
-}
-
-.shape2 {
-	width: 200px;
-	height: 200px;
-	bottom: -60px;
-	right: -60px;
-	animation: float 9s ease-in-out infinite reverse;
-}
-
-.shape3 {
-	width: 140px;
-	height: 140px;
-	top: 60%;
-	left: 10%;
-	animation: float 14s ease-in-out infinite;
-}
-
-@keyframes float {
-	0%, 100% { transform: translateY(0) translateX(0); }
-	50% { transform: translateY(-30px) translateX(20px); }
-}
-
+ 
 /* Card */
 .card {
-	position: relative;
-	z-index: 1;
 	background: rgba(255, 255, 255, 0.08);
 	backdrop-filter: blur(16px);
 	-webkit-backdrop-filter: blur(16px);
 	border: 1px solid rgba(255, 255, 255, 0.15);
 	border-radius: 20px;
-	padding: 56px 48px;
+	padding: 48px 48px 56px;
 	max-width: 560px;
 	width: 100%;
 	text-align: center;
-	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
 	animation: fadeIn 1s ease;
 }
-
+ 
 @keyframes fadeIn {
 	from { opacity: 0; transform: translateY(16px); }
 	to { opacity: 1; transform: translateY(0); }
 }
-
+ 
+/* Logo + wordmark */
+.logo {
+	width: 64px;
+	height: 64px;
+	object-fit: cover;
+	border-radius: 16px;
+	display: block;
+	margin: 0 auto 20px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+ 
+h1 {
+	margin-bottom: 24px;
+}
+ 
+.wordmark {
+	max-width: 280px;
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	border-radius: 8px;
+}
+ 
 .badge {
 	display: inline-block;
 	background: rgba(255, 199, 95, 0.15);
@@ -103,22 +76,14 @@ body {
 	border: 1px solid rgba(255, 199, 95, 0.35);
 	margin-bottom: 24px;
 }
-
-h1 {
-	color: #ffffff;
-	font-size: 2.6rem;
-	font-weight: 700;
-	letter-spacing: -0.5px;
-	margin-bottom: 12px;
-}
-
+ 
 .subtitle {
-	color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 0.8);
 	font-size: 1.05rem;
 	line-height: 1.6;
 	margin-bottom: 36px;
 }
-
+ 
 /* Countdown */
 .countdown {
 	display: flex;
@@ -127,7 +92,7 @@ h1 {
 	margin-bottom: 36px;
 	flex-wrap: wrap;
 }
-
+ 
 .countdown-item {
 	background: rgba(255, 255, 255, 0.08);
 	border: 1px solid rgba(255, 255, 255, 0.12);
@@ -135,7 +100,7 @@ h1 {
 	padding: 14px 18px;
 	min-width: 70px;
 }
-
+ 
 .countdown-number {
 	display: block;
 	font-size: 1.8rem;
@@ -143,35 +108,35 @@ h1 {
 	color: #ffffff;
 	font-variant-numeric: tabular-nums;
 }
-
+ 
 .countdown-label {
 	display: block;
 	font-size: 0.7rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: rgba(255, 255, 255, 0.55);
+	color: rgba(255, 255, 255, 0.6);
 	margin-top: 4px;
 }
-
+ 
 .launched {
 	color: #7fffb0;
 	font-size: 1.4rem;
 	font-weight: 600;
 }
-
+ 
 .lowercase {
-	color: rgba(255, 255, 255, 0.7);
+	color: rgba(255, 255, 255, 0.75);
 	font-size: 0.95rem;
 }
-
+ 
 .lowercase strong {
 	color: #ffc75f;
 }
-
+ 
 .footer {
 	margin-top: 40px;
 }
-
+ 
 .footer .line {
 	display: block;
 	width: 40px;
@@ -179,19 +144,23 @@ h1 {
 	background: rgba(255, 255, 255, 0.25);
 	margin: 0 auto 14px;
 }
-
+ 
 .footer p {
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.55);
 	font-size: 0.85rem;
 	letter-spacing: 0.5px;
 }
-
+ 
 @media (max-width: 480px) {
-	h1 {
-		font-size: 2rem;
-	}
 	.card {
-		padding: 40px 24px;
+		padding: 36px 24px 44px;
+	}
+	.logo {
+		width: 52px;
+		height: 52px;
+	}
+	.wordmark {
+		max-width: 220px;
 	}
 	.countdown-item {
 		min-width: 56px;
