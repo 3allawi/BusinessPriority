@@ -4,21 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Business Priority</title>
-	<link rel="icon" type="image/png" href="images/BP-Logo.png">
-	<link rel="stylesheet" type="text/css" href="Style.css">
+	<link rel="stylesheet" href="Style.css">
 </head>
 <body>
-
 	<main class="card">
 		<div class="badge">Under Construction</div>
 
-		<img class="logo" src="images/BP-Logo.png" alt="Business Priority logo">
+		<h1>Business <span>Priority</span></h1>
 
-		<h1><img class="wordmark" src="images/bp01.jpg" alt="Business Priority"></h1>
+		<p class="subtitle">We’re building something new. This page is currently under construction.</p>
 
-		<p class="subtitle">We're building something new. This page is currently under construction.</p>
-
-		<div class="countdown" id="countdown">
+		<div class="countdown" id="countdown" aria-label="Countdown to launch">
 			<div class="countdown-item">
 				<span class="countdown-number" id="days">00</span>
 				<span class="countdown-label">Days</span>
@@ -37,7 +33,7 @@
 			</div>
 		</div>
 
-		<p class="lowercase">Please come back anytime after the <strong>1st of September 2026</strong></p>
+		<p class="launch-date">Please come back anytime after <strong>18 September 2026</strong>.</p>
 
 		<div class="footer">
 			<span class="line"></span>
@@ -46,14 +42,13 @@
 	</main>
 
 	<script>
-		const launchDate = new Date("2026-09-01T00:00:00").getTime();
+		const launchDate = new Date("2026-09-18T00:00:00").getTime();
 
 		function updateCountdown() {
-			const now = new Date().getTime();
-			const distance = launchDate - now;
+			const distance = launchDate - Date.now();
 
 			if (distance < 0) {
-				document.getElementById("countdown").innerHTML = "<p class='launched'>We're live!</p>";
+				document.getElementById("countdown").innerHTML = "<p class='launched'>We’re live!</p>";
 				return;
 			}
 
@@ -71,19 +66,5 @@
 		updateCountdown();
 		setInterval(updateCountdown, 1000);
 	</script>
-
-</body>
-</html>
-
-			document.getElementById("days").textContent = String(days).padStart(2, "0");
-			document.getElementById("hours").textContent = String(hours).padStart(2, "0");
-			document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
-			document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
-		}
-
-		updateCountdown();
-		setInterval(updateCountdown, 1000);
-	</script>
-
 </body>
 </html>
